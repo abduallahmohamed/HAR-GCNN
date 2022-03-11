@@ -1,7 +1,7 @@
 # HAR-GCNN: Deep Graph CNNs for Human Activity Recognition From Highly Unlabeled Mobile Sensor Data
 ### Abduallah Mohamed, Fernando Lejarza, Stephanie Cahail <br />
 ### Christian Claudel, Edison Thomaz
-### Read full paper <a href="https://arxiv.org/abs/2203.03087">here</a>
+### Read full paper <a href="https://arxiv.org/abs/2203.03087">here</a>, Teaser video <a href="https://www.youtube.com/watch?v=0OHhDGr8sb0">here</a> 
 
 The problem of human activity recognition from mobile sensor data applies to multiple domains, such as health monitoring, personal fitness, daily life logging, and senior care. A critical challenge for training human activity recognition models is data quality. Acquiring balanced datasets containing accurate activity labels requires humans to correctly annotate and potentially interfere with the subjects' normal activities in real-time. Despite the likelihood of incorrect annotation or lack thereof, there is often an inherent chronology to human behavior. For example, we take a shower after we exercise. This implicit chronology can be used to learn unknown labels and classify future activities. In this work, we propose HAR-GCCN, a deep graph CNN model that leverages the correlation between chronologically adjacent sensor measurements to predict the correct labels for unclassified activities that have at least one activity label. We propose a new training strategy enforcing that the model predicts the missing activity labels by leveraging the known ones. HAR-GCCN shows superior performance relative to previously used baseline methods, improving classification accuracy by about 25% and up to 68% on different datasets.<br />
 <br />
