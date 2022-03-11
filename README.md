@@ -13,7 +13,10 @@ The problem of human activity recognition from mobile sensor data applies to mul
 
 # Code Intructions 
 - On the first run of testing or training code, the code will save a pickled version of the processed data for faster production in the next time. 
-
+- We used pipreqs to generate the minimum needed dependcies ro tun the code. The necessary packages are in requirements.txt, you can install it by running:
+```
+pip3 install -r requirements.txt
+```
 ## Code Structure
 - Dataset folder: contains the processed ExtraSensory and PAMAP dataset with a script to download the data.
 - modelsExtraSensory & modelsPAMAP folders: contain our model, HAR-GCNN, and baseline models for each dataset. 
@@ -33,12 +36,6 @@ To test the trained model add `--test` to the training command, for example:
 python3 train.py --tag test_hargcnn_extrasensory  --model hargcnn --normalization abduallahs --nodes_cnt 3 --randomseed 0 --test
 ``` 
 We used randomseed = {0,1,2} and reported the mean of these runs. Other examples for training settings can be found in `train.sh` and `trainbaselines.sh`.
-
-
-
-
-
-
 
 ## Ciation
 ```
